@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sakthi Priya | Portfolio</title>
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0b1020;
+  color: #edf4ff;
+  line-height: 1.7;
+}
+
+nav {
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #29364d;
+}
+
+.logo { color: #65e6f2; font-weight: bold; }
+
+nav a {
+  color: #edf4ff;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+.hero {
+  padding: 90px 8%;
+  background: radial-gradient(ellipse at top right, #193453, #0b1020 70%);
+}
+
+.tag { color: #65e6f2; letter-spacing: 2px; }
+
+h1 {
+  font-size: clamp(40px, 7vw, 65px);
+  line-height: 1.2;
+  margin: 20px 0;
+}
+
+h2 { font-size: 30px; margin-bottom: 20px; }
+
+p { color: #aab7ce; margin: 12px 0; }
+
+.hero p { max-width: 650px; font-size: 18px; }
+
+section { padding: 55px 8%; }
+
+.btn {
+  display: inline-block;
+  background: #65e6f2;
+  color: #07111c;
+  padding: 12px 20px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 12px 8px 0 0;
+}
+
+.btn.secondary {
+  background: transparent;
+  color: #65e6f2;
+  border: 1px solid #65e6f2;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #141d31;
+  border: 1px solid #29364d;
+  padding: 24px;
+  border-radius: 14px;
+}
+
+.card h3 { margin-bottom: 10px; }
+
+.chip {
+  display: inline-block;
+  background: #1b3044;
+  color: #65e6f2;
+  padding: 5px 12px;
+  border-radius: 20px;
+  margin: 5px 3px;
+  font-size: 13px;
+}
+
+.card a { color: #65e6f2; text-decoration: none; }
+
+footer {
+  text-align: center;
+  padding: 25px;
+  border-top: 1px solid #29364d;
+}
+
+@media(max-width: 600px) {
+  nav { gap: 12px; }
+  nav a { margin-left: 5px; }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">SAKTHI PRIYA</div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="tag">B.TECH INFORMATION TECHNOLOGY</div>
+
+  <h1>Hello, I'm<br>
+    <span style="color:#65e6f2">Sakthi Priya S.</span>
+  </h1>
+
+  <p>
+    An enthusiastic Information Technology student interested in
+    Software Development, Cloud Computing and Cybersecurity.
+    I enjoy learning new technologies, solving problems and
+    building practical projects. I am looking forward to gaining
+    real-world industry experience through internship opportunities.
+  </p>
+
+  <a class="btn" href="#projects">Explore My Projects ↓</a>
+  <a class="btn secondary"
+     href="https://github.com/sakthidata01"
+     target="_blank">GitHub Profile ↗</a>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>
+      I am a B.Tech Information Technology student passionate about
+      technology and continuous learning. I enjoy exploring software
+      development, database management and cybersecurity concepts
+      through hands-on projects.
+    </p>
+    <p><strong>Education:</strong> B.Tech – Information Technology</p>
+    <p><strong>Interests:</strong> Cloud Computing, Software Development,
+       Database Systems and Cybersecurity</p>
+    <p><strong>Goal:</strong> To apply my technical knowledge and grow
+       through real-world projects and industry experience.</p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <div class="card">
+    <span class="chip">Python</span>
+    <span class="chip">SQL</span>
+    <span class="chip">Git & GitHub</span>
+    <span class="chip">HTML</span>
+    <span class="chip">CSS</span>
+    <span class="chip">Streamlit</span>
+    <span class="chip">SQLite</span>
+    <span class="chip">Database Concepts</span>
+    <span class="chip">Cybersecurity Fundamentals</span>
+  </div>
+  <p>Skills listed here should reflect what I can explain and demonstrate.</p>
+</section>
+
+<section id="projects">
+  <h2>Featured Projects</h2>
+  <p>Practical projects developed while exploring software development,
+     databases and cybersecurity.</p>
+
+  <div class="grid">
+
+    <article class="card">
+      <h3>01 · SkillTwin AI</h3>
+      <p>
+        A student career guidance assistant exploring AI-powered
+        career discovery, skill gap identification, learning
+        roadmaps and mock interview practice.
+      </p>
+      <span class="chip">Python</span>
+      <span class="chip">Streamlit</span>
+      <span class="chip">AI Chatbot</span>
+      <p><a href="https://github.com/sakthidata01/CodeAlpha-SkillTwin_AI"
+         target="_blank">View Project ↗</a></p>
+      <p><a href="https://codealpha-skilltwinai-y3jspgb4ja9k5w3g6zeket.streamlit.app/"
+         target="_blank">Live Demo ↗</a></p>
+    </article>
+
+    <article class="card">
+      <h3>02 · Data Redundancy</h3>
+      <p>
+        A student record management project exploring data
+        organization, duplicate prevention and database operations.
+      </p>
+      <span class="chip">Python</span>
+      <span class="chip">SQLite</span>
+      <span class="chip">Streamlit</span>
+      <p><a href="https://github.com/sakthidata01/CodeAlpha_Data_Redundancy"
+         target="_blank">View Project ↗</a></p>
+    </article>
+
+    <article class="card">
+      <h3>03 · SecureBank</h3>
+      <p>
+        An educational project exploring SQL injection prevention,
+        database security and data protection in a simulated banking
+        environment.
+      </p>
+      <span class="chip">Python</span>
+      <span class="chip">SQL Security</span>
+      <span class="chip">Streamlit</span>
+      <p><a href="https://github.com/sakthidata01/leak_detection"
+         target="_blank">View Project ↗</a></p>
+      <p><a href="https://securebank-defense.streamlit.app/"
+         target="_blank">Live Demo ↗</a></p>
+    </article>
+
+  </div>
+</section>
+
+<section id="learning">
+  <h2>Learning & Development</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Cloud Computing</h3>
+      <p>Building my understanding of cloud technologies and services.</p>
+    </div>
+    <div class="card">
+      <h3>Problem Solving</h3>
+      <p>Improving programming skills and logical thinking.</p>
+    </div>
+    <div class="card">
+      <h3>Continuous Learning</h3>
+      <p>Learning through coursework, practice and hands-on projects.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Let's Connect</h2>
+  <div class="card">
+    <p>
+      I am interested in internship opportunities, collaborative
+      projects and learning from real-world technical challenges.
+    </p>
+    <a class="btn"
+       href="https://www.linkedin.com/in/sakthi-priya-s-91a576383/"
+       target="_blank">LinkedIn ↗</a>
+
+    <a class="btn secondary"
+       href="https://github.com/sakthidata01"
+       target="_blank">GitHub ↗</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Sakthi Priya S. | Personal Portfolio</p>
+  <p>Designed with HTML and CSS</p>
+</footer>
+
+</body>
+</html>
